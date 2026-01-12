@@ -1,6 +1,8 @@
 // Task 1
 // При натисканні кнопки .b-1 спрацьовує функція f1. Функція повинна прочитати вміст .i-1 і порівняти його з числом 4 (порівняння ==). Результат порівняння - true або false виведіть у .out-1.
 
+const btn1 = document.querySelector(".b-1");
+
 // Task 2
 // Дані дві змінні a21 і a22. При натисканні кнопки .b-2, запускається функція f2. Функція повинна порівняти змінні за допомогою if else і вивести в .out-2 число, яке більше. Варіант рівності змінних не розглядаємо.
 
@@ -19,10 +21,37 @@ let a22 = 32;
 
 // Task 6.
 // На сторінці є input з класом i-6, куди користувач може ввести число. Є кнопка .b-6, яка запускає функцію f6. Функція повинна вивести в .out-6 слово even, якщо число парне, і odd, якщо непарне. Для перевірки парності використовується цілочисельна остача від ділення на 2 (оператор %). Якщо остача дорівнює нулю - парне, ні - непарне.
+const btn6 = document.querySelector(".b-6");
+const input6 = document.querySelector(".i-6");
+const out6 = document.querySelector(".out-6");
 
+btn6.onclick = f6;
+
+function f6() {
+  let result = null;
+  const num = +input6.value;
+  if (num % 2 === 0) {
+    result = "Even";
+  } else {
+    result = "Odd";
+  }
+  out6.textContent = result;
+}
 // Task 7.
 // Дані 2 input - .i-71 і .i-72, обидва - input[type=number]. При натисканні кнопки .b-7 спрацьовує функція f7. Функція повинна число з .i-71 піднести до степеня .i-72, вивести результат в .out-7. Для піднесення до степеня можна використовувати **, або Math.pow.
+const btn7 = document.querySelector(".b-7");
+const input7_1 = document.querySelector(".i-71");
+const input7_2 = document.querySelector(".i-72");
+const out7 = document.querySelector(".out-7");
 
+btn7.onclick = f7;
+
+function f7() {
+  const num1 = input7_1.value;
+  const num2 = input7_2.value;
+  const result = num1 ** num2;
+  out7.textContent = result;
+}
 // Task 8.
 // Дано select s-8, який містить 3 значення: 1, 2, 3. Дана кнопка b-8. При її натисканні спрацьовує функція f8. Функція повинна отримати обране в select число, потім за допомогою switch case порівняти його по черзі з 1, 2, 3. І якщо вибрано число 1, то вивести в .out-8 рядок one, якщо 2 - two, якщо 3 - three. Нагадую - це програмування. Як зазначено в завданні - так і виводимо. Тобто Three з великої літери - помилка!
 
@@ -50,3 +79,21 @@ let a22 = 32;
 
 // Task 15
 // Дано select .s-151 і .s-152, кожен з яких містить 1 і 0. Дано select .s-153, який містить дві операції - && і || . Дана кнопка .b-15, при натисканні на яку спрацьовує функція f15. Функція виводить в .out-15 результат логічних операцій, обраних в 3 select, до чисел, обраних в першому і другому select. Наприклад, вибрано 1 1 &&, потрібно вивести результат операції 1&&1 тобто 1 або 0.
+
+// const points = 2300;
+
+if (points <= 500) {
+  console.log("Level 1");
+} else if (points < 1500) {
+  console.log("Level 2");
+} else if (points < 2500) {
+  console.log("Level 3");
+} else if (points < 3500) {
+  console.log("Level 4");
+} else {
+  console.log("Level 5");
+}
+
+const isFriend = true;
+const isOnline = true;
+const isDenied = false;

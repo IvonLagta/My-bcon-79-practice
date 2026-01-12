@@ -85,22 +85,125 @@ function t9() {
   input9.value = "";
 }
 
-const points = 2300;
+// 10
+const btn10 = document.querySelector(".b-10");
+const input10 = document.querySelector(".i-10");
+const out10 = document.querySelector(".out-10");
 
-if (points <= 500) {
-  console.log("Level 1");
-} else if (points < 1500) {
-  console.log("Level 2");
-} else if (points < 2500) {
-  console.log("Level 3");
-} else if (points < 3500) {
-  console.log("Level 4");
-} else {
-  console.log("Level 5");
+btn10.onclick = t10;
+
+function t10() {
+  if (input10.value === "") {
+    alert("Enter a number");
+    return;
+  }
+  out10.textContent = +input10.value * 20;
+  input10.value = "";
 }
 
-const isFriend = true;
-const isOnline = true;
-const isDenied = false;
+// 11
+const btn11 = document.querySelector(".b-11");
+const input11 = document.querySelector(".i-11");
+const out11 = document.querySelector(".out-11");
 
-const canOpenChat = isFriend && isOnline && isDenied ===
+btn11.onclick = t11;
+
+function t11() {
+  out11.textContent = input11.value + 55;
+  input11.value = "";
+}
+
+//12
+const btn12 = document.querySelector(".b-12");
+const inputName = document.querySelector(".i-12-1");
+const inputSurname = document.querySelector(".i-12-2");
+const out12 = document.querySelector(".out-12");
+
+btn12.onclick = t12;
+
+function t12() {
+  // out12.textContent = "Hello " + inputName.value + " " + inputSurname.value;
+  out12.textContent = `Hello ${inputName.value} ${inputSurname.value}`;
+  inputName.value = "";
+  inputSurname.value = "";
+}
+
+// 13
+const btn13 = document.querySelector(".b-13");
+const input13_1 = document.querySelector(".i-13-1");
+const input13_2 = document.querySelector(".i-13-2");
+const out13 = document.querySelector(".out-13");
+
+btn13.onclick = t13;
+
+function t13() {
+  out13.textContent = +input13_1.value + +input13_2.value;
+  input13_1.value = "";
+  input13_2.value = "";
+}
+
+// 14
+const btn14 = document.querySelector(".b-14");
+const input14 = document.querySelector(".i-14");
+const out14 = document.querySelector(".out-14");
+
+btn14.onclick = t14;
+
+function t14() {
+  input14.value = "Go";
+}
+
+// 15
+const btn15 = document.querySelector(".b-15");
+const input15 = document.querySelector(".i-15");
+const out15 = document.querySelector(".out-15");
+
+btn15.onclick = t15;
+
+function t15() {
+  input15.style.border = "2px solid red";
+}
+
+// 16
+const btn16 = document.querySelector(".b-16");
+const input16_1 = document.querySelector(".i-16-1");
+const input16_2 = document.querySelector(".i-16-2");
+const out16 = document.querySelector(".out-16");
+
+btn16.onclick = t16;
+
+function t16() {
+  out16.textContent = input16_1.value + input16_2.value;
+  input16_1.value = "";
+  input16_2.value = "";
+}
+
+// 17
+const btn17 = document.querySelector(".b-17");
+const input17_1 = document.querySelector(".i-17-1");
+function t17() {}
+
+// 18
+const btn18 = document.querySelector(".b-18");
+const input18 = document.querySelector(".i-18");
+const out18 = document.querySelector(".out-18");
+
+btn18.onclick = t18;
+
+function t18() {
+  const a = Number.parseFloat(input18.value);
+  out18.textContent = a;
+  input18.value = "";
+}
+
+// 19
+const btn19 = document.querySelector(".b-19");
+const input19_1 = document.querySelector(".i-19-1");
+const input19_2 = document.querySelector(".i-19-2");
+const out19 = document.querySelector(".out-19");
+
+btn19.onclick = t19;
+
+function t19() {
+  out19.textContent = Number.parseInt(inp19_1) + Number.parseInt(inp19_2);
+}
