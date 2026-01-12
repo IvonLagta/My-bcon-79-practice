@@ -1,3 +1,22 @@
+// 6
+const containerEl = document.getElementById("six");
+console.log("🚀 ~ containerEl:", containerEl);
+containerEl.textContent = "Hello" + "World";
+
+// 7
+const multiplication = 12 * 12;
+console.log("🚀 ~ multiplication:", multiplication);
+
+// 8
+const elementOut8 = document.querySelector(".out8");
+console.log("🚀 ~ elementOut8:", elementOut8);
+elementOut8.textContent = "task-8";
+
+// 9
+const elementOut9 = document.querySelector(".out-9");
+console.log("🚀 ~ elementOut9:", elementOut9);
+elementOut9.textContent = "World";
+
 // 10
 const elementOut10 = document.querySelector(".out-10");
 console.log("🚀 ~ elementOut10:", elementOut10);

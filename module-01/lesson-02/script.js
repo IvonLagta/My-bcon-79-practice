@@ -84,3 +84,23 @@ function t9() {
   out9.textContent = input9.value;
   input9.value = "";
 }
+
+const points = 2300;
+
+if (points <= 500) {
+  console.log("Level 1");
+} else if (points < 1500) {
+  console.log("Level 2");
+} else if (points < 2500) {
+  console.log("Level 3");
+} else if (points < 3500) {
+  console.log("Level 4");
+} else {
+  console.log("Level 5");
+}
+
+const isFriend = true;
+const isOnline = true;
+const isDenied = false;
+
+const canOpenChat = isFriend && isOnline && isDenied ===
