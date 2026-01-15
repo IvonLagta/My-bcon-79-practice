@@ -54,20 +54,72 @@ function f7() {
 }
 // Task 8.
 // Дано select s-8, який містить 3 значення: 1, 2, 3. Дана кнопка b-8. При її натисканні спрацьовує функція f8. Функція повинна отримати обране в select число, потім за допомогою switch case порівняти його по черзі з 1, 2, 3. І якщо вибрано число 1, то вивести в .out-8 рядок one, якщо 2 - two, якщо 3 - three. Нагадую - це програмування. Як зазначено в завданні - так і виводимо. Тобто Three з великої літери - помилка!
+const select8 = document.querySelector(".s-8");
+const btn8 = document.querySelector(".b-8");
+const out8 = document.querySelector(".out-8");
 
+btn8.onclick = f8;
+
+function f8() {
+  const value = +select8.selectedOptions[0].value;
+  console.log("🚀 ~ f8 ~ value:", value);
+  switch (value) {
+    case 1:
+      out8.textContent = "one";
+      break;
+    case 2:
+      out8.textContent = "two";
+      break;
+    case 3:
+      out8.textContent = "three";
+      break;
+  }
+}
 // Task 9
 // Є input з класом .i-9, куди користувач може ввести номер квартири. Є кнопка .b-9, яка запускає функцію f9. Функція повинна вивести в .out-9 номер під'їзду, в якому знаходиться квартира.
 //  якщо від 1 включно до 32 включно - то вивести цифру 1
 //  якщо від 33 (включно) до 43 (включно) - то вивести 2
 //  якщо від 44 (включно) до 64 (включно) - то 3.
 //  В іншому випадку, вивести 0.
+const btn9 = document.querySelector(".b-9");
+const input9 = document.querySelector(".i-9");
+const out9 = document.querySelector(".out-9");
+
+btn9.onclick = f9;
+
+function f9() {
+  const value = Number(input9.value);
+  if (value >= 1 && value <= 32) {
+    out9.textContent = 1;
+  } else if (value >= 33 && value <= 43) {
+    out9.textContent = 2;
+  } else if (value >= 44 && value <= 64) {
+    out9.textContent = 3;
+  } else {
+    out9.textContent = 0;
+  }
+}
 
 // Task 10
 // Дано select .s-100. Після натискання кнопки, виведіть value обраного option в .out-10.
+const btn10 = document.querySelector(".b-10");
+const select10 = document.querySelector(".s-100");
+const out10 = document.querySelector(".out-10");
+
+btn10.onclick = f10;
+
+function f10() {
+  out10.textContent = select10.value;
+}
 
 // Task 11
 // Дано select .s-110. При зміні стану select (подія onchange) виведіть value обраного option в .out-11.
+const select11 = document.querySelector(".s-110");
+const out11 = document.querySelector(".out-11");
 
+function f11() {
+  out11.textContent = select11.value;
+}
 // Task 12
 // Дано input .i-120. Після натискання кнопки отримайте значення з input в змінну, а потім виведіть в .out-12 typeof отриманої змінної. Typeof дозволяє визначити тип даних.
 
@@ -76,24 +128,53 @@ function f7() {
 
 // Task 14
 // Дано input .i-141 і .i-142, [type=number]. Дано select .s-143, який містить чотири операції - +, -, *, / . Дана кнопка b-14, при натисканні на яку спрацьовує функція f14. Функція виводить в .out-14 результат операцій, обраних в 3-му select, до чисел, введених в першому і другому input. Наприклад вибрано 1 13 +, потрібно вивести результат операції 1+13 тобто 14.
+const input141 = document.querySelector(".i-141");
+const input142 = document.querySelector(".i-142");
+const sel14 = document.querySelector(".s-143");
+const btn14 = document.querySelector(".b-14");
+const out14 = document.querySelector(".out-14");
+
+btn14.onclick = f14;
+
+function f14() {
+  const num1 = +input141.value;
+  const num2 = +input142.value;
+  let result;
+  switch (sel14.value) {
+    case "+":
+      result = num1 + num2;
+      break;
+    case "-":
+      result = num1 - num2;
+      break;
+    case "*":
+      result = num1 * num2;
+      break;
+    case "/":
+      result = num1 / num2;
+      break;
+  }
+  out14.textContent = result;
+}
 
 // Task 15
 // Дано select .s-151 і .s-152, кожен з яких містить 1 і 0. Дано select .s-153, який містить дві операції - && і || . Дана кнопка .b-15, при натисканні на яку спрацьовує функція f15. Функція виводить в .out-15 результат логічних операцій, обраних в 3 select, до чисел, обраних в першому і другому select. Наприклад, вибрано 1 1 &&, потрібно вивести результат операції 1&&1 тобто 1 або 0.
+const sel151 = document.querySelector(".s-151");
+const sel152 = document.querySelector(".s-152");
+const sel153 = document.querySelector(".s-153");
+const btn15 = document.querySelector(".b-15");
+const out15 = document.querySelector(".out-15");
 
-// const points = 2300;
+btn15.onclick = f15;
 
-if (points <= 500) {
-  console.log("Level 1");
-} else if (points < 1500) {
-  console.log("Level 2");
-} else if (points < 2500) {
-  console.log("Level 3");
-} else if (points < 3500) {
-  console.log("Level 4");
-} else {
-  console.log("Level 5");
+function f15() {
+  let result;
+  if (sel153.value === "&&") {
+    +sel151.value && +sel152.value;
+    result = +sel151.value && +sel152.value;
+  } else if (sel153.value === "||") {
+    +sel151.value || +sel152.value;
+    result = +sel151.value || +sel152.value;
+  }
+  out15.textContent = result;
 }
-
-const isFriend = true;
-const isOnline = true;
-const isDenied = false;
