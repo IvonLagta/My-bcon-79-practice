@@ -1,3 +1,16 @@
+// 1
+console.log("Ivan");
+
+// 2
+console.log(Number(8));
+
+// 3
+console.log("Ласкаво " + " просимо " + " на курс");
+
+// 4
+alert("2019");
+// 5
+console.log(Number(2019) - Number(200));
 // 6
 const containerEl = document.getElementById("six");
 console.log("🚀 ~ containerEl:", containerEl);
