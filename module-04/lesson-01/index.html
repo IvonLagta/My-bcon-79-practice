@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html lang="ua">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Module 03. Lesson 01</title>
+    <title>Module 04. Lesson 01</title>
     <link
       rel="icon"
       type="image/png"
@@ -28,7 +28,7 @@
   <body>
     <header>
       <div class="container container-small">
-        <h1 class="title">Module 03. Lesson 01</h1>
+        <h1 class="title">Module 03. Lesson 02</h1>
         <h2 class="subtitle">
           Click on the down arrow and go to the problem solving
         </h2>
@@ -38,17 +38,26 @@
     </header>
 
     <main class="container">
-      <!-- Task-1 -->
-      <section id="start">
+      <!-- Task 1 -->
+      <section>
         <div class="panel">
           <div class="panel-head">
             <p class="panel-title">Task 1.</p>
           </div>
           <div class="panel-body">
             <p>
-              Створіть масив ar1, що містить рядки, числа, булеві значення.
-              Виведіть його в .out-1. Виведення — після натискання кнопки b-1.
+              При натисканні b-1 виконуйте функцію fn1. Функція повинна вивести
+              в out-1 значення, збережене під ключем two з масиву obj1.
+              Поверніть це значення.
             </p>
+            <pre>
+const obj1 = {
+"one" : 15,
+"two" : 16,
+"five" : 20
+};
+</pre
+            >
             <button class="button-primary b-1">Task-1</button>
           </div>
           <div class="panel-footer">
@@ -59,7 +68,8 @@
           </div>
         </div>
       </section>
-      <!-- Task-2 -->
+
+      <!-- Task 2 -->
       <section>
         <div class="panel">
           <div class="panel-head">
@@ -67,10 +77,17 @@
           </div>
           <div class="panel-body">
             <p>
-              Створіть масив ar2, що містить рядки, числа, булеві значення.
-              Виведіть його в div.out-2. Використовуйте шаблон виведення з коду
-              в JS. Виведення — після натискання кнопки b-2.
+              При натисканні b-2 виконуйте функцію fn2. Функція повинна вивести
+              в out-2 значення hi з масиву obj2. Поверніть це значення.
             </p>
+            <pre>
+    const obj2 = {
+"one" : "hello",
+"two" : "mahai",
+"five" : "hi"
+};
+</pre
+            >
             <button class="button-primary b-2">Task-2</button>
           </div>
           <div class="panel-footer">
@@ -81,7 +98,8 @@
           </div>
         </div>
       </section>
-      <!-- Task-3 -->
+
+      <!-- Task 3 -->
       <section>
         <div class="panel">
           <div class="panel-head">
@@ -89,8 +107,9 @@
           </div>
           <div class="panel-body">
             <p>
-              Створіть масив ar3, заповніть його будь-якими значеннями. Виведіть
-              довжину масиву.
+              При натисканні b-3 виконуйте функцію fn3. Функція повинна вивести
+              в out-3 значення hi з масиву obj3. Поверніть результуючий рядок.
+              Виведення — через пробіл.
             </p>
             <button class="button-primary b-3">Task-3</button>
           </div>
@@ -102,7 +121,8 @@
           </div>
         </div>
       </section>
-      <!-- Task-4 -->
+
+      <!-- Task 4 -->
       <section>
         <div class="panel">
           <div class="panel-head">
@@ -110,9 +130,12 @@
           </div>
           <div class="panel-body">
             <p>
-              Створіть масив ar4. Виведіть нульовий, третій, восьмий елемент
-              масиву в out-4 через пробіл.
+              Давайте напишемо функцію fn4, яка буде виводити масив obj4 в out-4
+              при натисканні кнопки b-4. Формат виведення — ключ пробіл значення
+              +'&#x27; &#x3C;br&#x3E;'. Функція повинна повертати рядок у
+              зазначеному форматі виведення.
             </p>
+            <p>⚠️ Зверніть увагу на пробіл перед br</p>
             <button class="button-primary b-4">Task-4</button>
           </div>
           <div class="panel-footer">
@@ -123,7 +146,8 @@
           </div>
         </div>
       </section>
-      <!-- Task-5 -->
+
+      <!-- Task 5 -->
       <section>
         <div class="panel">
           <div class="panel-head">
@@ -131,9 +155,10 @@
           </div>
           <div class="panel-body">
             <p>
-              Створіть масив ar5, довжина якого більше 5. Виведіть суму
-              нульового, другого та третього елементів масиву (нуль, другий і
-              третій — це індекси 0, 2, 3).
+              Функція f4 жорстко прив'язана до масиву obj4. Це незручно. Давайте
+              напишемо функцію fn5, яка приймає масив як параметр і виводить
+              його у форматі, зазначеному у функції, в зазначений блок (як
+              другий параметр).
             </p>
             <button class="button-primary b-5">Task-5</button>
           </div>
@@ -145,7 +170,8 @@
           </div>
         </div>
       </section>
-      <!-- Task-6 -->
+
+      <!-- Task 6 -->
       <section>
         <div class="panel">
           <div class="panel-head">
@@ -153,10 +179,17 @@
           </div>
           <div class="panel-body">
             <p>
-              Створіть масив ar6, який містить ваше ім'я, знак зодіаку, день
-              народження та місяць народження. Виведіть масив на сторінку в
-              div-6. Роздільник — пробіл.
+              Додайте input .i-61 та i-62. При натисканні b-6 виконуйте функцію
+              fn6. Функція повинна отримувати з i-61 ключ, а з i-62 значення і
+              додавати його в масив obj6. Після цього за допомогою функції fn5
+              виводьте масив a6 в out-6.
             </p>
+            <div class="form-control">
+              Input i-61 <input type="text" class="i-61" />
+            </div>
+            <div class="form-control">
+              Input i-62 <input type="text" class="i-62" />
+            </div>
             <button class="button-primary b-6">Task-6</button>
           </div>
           <div class="panel-footer">
@@ -167,7 +200,8 @@
           </div>
         </div>
       </section>
-      <!-- Task-7 -->
+
+      <!-- Task 7 -->
       <section>
         <div class="panel">
           <div class="panel-head">
@@ -175,10 +209,13 @@
           </div>
           <div class="panel-body">
             <p>
-              Додайте в масив ar7 значення 'vietnam' з індексом 7, 'turkey' з
-              індексом 6, 'italy' з індексом 5. Додавання елементів зробіть у
-              f7. Виведіть масив на сторінку в .out-7. Роздільник — пробіл.
+              Додайте input .i-7. При натисканні b-7 виконуйте функцію fn7.
+              Функція повинна отримувати з i-7 ключ. Якщо такий ключ є в obj7,
+              то виводити 1 в out-7, якщо немає — 0.
             </p>
+            <div class="form-control">
+              Input i-7 <input type="text" class="i-7" />
+            </div>
             <button class="button-primary b-7">Task-7</button>
           </div>
           <div class="panel-footer">
@@ -189,7 +226,8 @@
           </div>
         </div>
       </section>
-      <!-- Task-8 -->
+
+      <!-- Task 8 -->
       <section>
         <div class="panel">
           <div class="panel-head">
@@ -197,23 +235,25 @@
           </div>
           <div class="panel-body">
             <p>
-              Додайте в масив ar8 третій (індекс 3) елемент, що дорівнює 3.14,
-              4-й (індекс 4) елемент, що дорівнює 17, 6-й елемент (індекс 6), що
-              дорівнює 5. Виведіть масив в .out-8. Роздільник — дефіс. В
-              .out-8-1 виведіть довжину масиву ar8.
+              Додайте input .i-8. При натисканні b-8 виконуйте функцію fn8.
+              Функція повинна виводити значення в out-8, якщо ключ, введений в
+              i-8, є в обʼєкті, якщо немає — 0.
             </p>
+            <div class="form-control">
+              Input i-8 <input type="text" class="i-8" />
+            </div>
             <button class="button-primary b-8">Task-8</button>
           </div>
           <div class="panel-footer">
             <h6>Output</h6>
             <blockquote>
               <div class="out-8"></div>
-              <div class="out-8-1"></div>
             </blockquote>
           </div>
         </div>
       </section>
-      <!-- Task-9 -->
+
+      <!-- Task 9 -->
       <section>
         <div class="panel">
           <div class="panel-head">
@@ -221,10 +261,14 @@
           </div>
           <div class="panel-body">
             <p>
-              Виведіть останній елемент масиву ar9. Виведення останнього
-              елемента — реалізуйте за індексом. Щоб розрахувати індекс
-              останнього елемента — використовуйте довжину масиву.
+              Додайте input .i-9. При натисканні b-9 виконуйте функцію fn9.
+              Функція повинна вивести в out-9 всі ключі обʼєкту obj9, які
+              містять значення, що дорівнює значенню в input.i-9. Виведення
+              через пробіл. Якщо значень немає, то виводити порожній рядок.
             </p>
+            <div class="form-control">
+              Input i-9 <input type="text" class="i-9" />
+            </div>
             <button class="button-primary b-9">Task-9</button>
           </div>
           <div class="panel-footer">
@@ -235,7 +279,8 @@
           </div>
         </div>
       </section>
-      <!-- Task-10 -->
+
+      <!-- Task 10 -->
       <section>
         <div class="panel">
           <div class="panel-head">
@@ -243,11 +288,11 @@
           </div>
           <div class="panel-body">
             <p>
-              Виведіть суму першого (індекс 1) та останнього елементів масиву
-              ar10 у блок out-10. Індекс останнього елемента масиву не вказуйте
-              безпосередньо, а обчислюйте через довжину масиву.
+              Давайте напишемо корисну функцію fn10, яка перевіряє, чи є
+              значення в асоціативному масиві. Функція повинна повертати true,
+              якщо є, і false, якщо немає. Масив і значення передавати функції
+              як параметри.
             </p>
-            <pre>ar10 = [100, 200, 300, 400, 700, 121];</pre>
             <button class="button-primary b-10">Task-10</button>
           </div>
           <div class="panel-footer">
@@ -258,7 +303,8 @@
           </div>
         </div>
       </section>
-      <!-- Task-11 -->
+
+      <!-- Task 11 -->
       <section>
         <div class="panel">
           <div class="panel-head">
@@ -266,11 +312,14 @@
           </div>
           <div class="panel-body">
             <p>
-              Напишіть функцію, яка міняє місцями другий (індекс 2) і четвертий
-              (індекс 4) елементи масиву ar11 і виводить його в out-11.
-              Роздільник — пробіл.
+              При натисканні b-11 виконуйте функцію fn11. Функція повинна
+              отримати ключ з i-11 і видалити запис із обʼєкту obj11 з таким
+              ключем. Після цього вивести обʼєкт в out-11. Для виведення
+              використовуйте функцію fn5.
             </p>
-            <pre>ar11 = [2,3,4,5,6,7];</pre>
+            <div class="form-control">
+              Input i-11 <input type="text" class="i-11" />
+            </div>
             <button class="button-primary b-11">Task-11</button>
           </div>
           <div class="panel-footer">
@@ -281,7 +330,8 @@
           </div>
         </div>
       </section>
-      <!-- Task-12 -->
+
+      <!-- Task 12 -->
       <section>
         <div class="panel">
           <div class="panel-head">
@@ -289,11 +339,14 @@
           </div>
           <div class="panel-body">
             <p>
-              Напишіть функцію f12, яка міняє місцями нульовий і останній
-              елементи масиву ar12 і виводить його в out-12. Роздільник —
-              пробіл. Останній елемент обчислювати через довжину масиву.
+              При натисканні b-12 виконуйте функцію fn12. Функція повинна
+              отримати значення з i-12 і видалити запис із обʼєкту obj12 з таким
+              значенням. Після цього вивести масив в out-12. Для виведення
+              використовуйте функцію fn5.
             </p>
-            <pre>ar12 = ['test', 'west', 'list', 'class', 'best'];</pre>
+            <div class="form-control">
+              Input i-12 <input type="text" class="i-12" />
+            </div>
             <button class="button-primary b-12">Task-12</button>
           </div>
           <div class="panel-footer">
@@ -304,7 +357,8 @@
           </div>
         </div>
       </section>
-      <!-- Task-13 -->
+
+      <!-- Task 13 -->
       <section>
         <div class="panel">
           <div class="panel-head">
@@ -312,11 +366,10 @@
           </div>
           <div class="panel-body">
             <p>
-              Виведіть масив ar13 в out-13 у форматі: індекс пробіл значення
-              пробіл.
+              При натисканні b-13 виконуйте функцію fn13. Функція повинна в
+              out-13 виводити суму значень обʼєкта obj13 (тільки числа).
             </p>
-            <pre>ar13 = ['test', 'west', 'list', 'class', 'best'];</pre>
-            <button class="button-primary b13-">Task-13</button>
+            <button class="button-primary b-13">Task-13</button>
           </div>
           <div class="panel-footer">
             <h6>Output</h6>
@@ -326,7 +379,8 @@
           </div>
         </div>
       </section>
-      <!-- Task-14 -->
+
+      <!-- Task 14 -->
       <section>
         <div class="panel">
           <div class="panel-head">
@@ -334,10 +388,10 @@
           </div>
           <div class="panel-body">
             <p>
-              Використовуючи цикл, виведіть на сторінку масив ar14 у зворотному
-              порядку. Роздільник — пробіл.
+              При натисканні b-14 виконуйте функцію fn14. Функція повинна в
+              out-14 виводити нульові (за індексом) елементи вкладених масивів в
+              obj14. Виведення через пробіл.
             </p>
-            <pre>ar14 = [1, 2, 3, 'hello', 66];</pre>
             <button class="button-primary b-14">Task-14</button>
           </div>
           <div class="panel-footer">
@@ -348,7 +402,8 @@
           </div>
         </div>
       </section>
-      <!-- Task-15 -->
+
+      <!-- Task 15 -->
       <section>
         <div class="panel">
           <div class="panel-head">
@@ -356,10 +411,10 @@
           </div>
           <div class="panel-body">
             <p>
-              Використовуючи цикл, виведіть на сторінку елементи масиву ar15,
-              які більші за нуль. Роздільник — пробіл.
+              При натисканні b-15 виконуйте функцію fn15. Функція повинна в
+              out-15 виводити елементи вкладених масивів в obj15. Виведення
+              через пробіл.
             </p>
-            <pre>ar15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];</pre>
             <button class="button-primary b-15">Task-15</button>
           </div>
           <div class="panel-footer">
@@ -370,7 +425,8 @@
           </div>
         </div>
       </section>
-      <!-- Task-16 -->
+
+      <!-- Task 16 -->
       <section>
         <div class="panel">
           <div class="panel-head">
@@ -378,30 +434,22 @@
           </div>
           <div class="panel-body">
             <p>
-              Виконайте перебір масиву ar16. Парні елементи додайте в масив
-              ar16_even, непарні — в ar16_odd. <br />
-              ⚠️Додавання в масив — за індексом, а не += ⚠️ <br />
-              Протестуйте завдання на повторний запуск! Виведіть ar16_odd в
-              div.out-16-odd, а ar16_even в div.out-16-even. Роздільник —
-              пробіл.
+              При натисканні b-16 виконуйте функцію fn16. Функція повинна в
+              out-16 виводити елементи name вкладених обʼєктів в obj16.
+              Виведення через пробіл.
             </p>
-            <pre>
-                ar16 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78]; <br>
-                ar16_odd = [];<br>
-                ar16_even = [];
-            </pre>
             <button class="button-primary b-16">Task-16</button>
           </div>
           <div class="panel-footer">
             <h6>Output</h6>
             <blockquote>
-              <div class="out-16-odd"></div>
-              <div class="out-16-even"></div>
+              <div class="out-16"></div>
             </blockquote>
           </div>
         </div>
       </section>
-      <!-- Task-17 -->
+
+      <!-- Task 17 -->
       <section>
         <div class="panel">
           <div class="panel-head">
@@ -409,11 +457,10 @@
           </div>
           <div class="panel-body">
             <p>
-              Використовуючи цикл, виведіть в .out-17 кількість елементів ar17,
-              значення яких більше 3. Для розрахунку використовуйте цикл і
-              змінну-лічильник.
+              При натисканні b-17 виконуйте функцію fn17. Функція повинна в
+              out-17 виводити елементи name вкладених обʼєктів в a17, для яких
+              age > 30. Виведення через пробіл.
             </p>
-            <pre>ar17 =  [3, 0, 2, 6, 0, 1, 3, 1, 9, 0, 2, 0];</pre>
             <button class="button-primary b-17">Task-17</button>
           </div>
           <div class="panel-footer">
@@ -424,7 +471,8 @@
           </div>
         </div>
       </section>
-      <!-- Task-18 -->
+
+      <!-- Task 18 -->
       <section>
         <div class="panel">
           <div class="panel-head">
@@ -432,10 +480,14 @@
           </div>
           <div class="panel-body">
             <p>
-              Використовуючи цикл, виведіть в .out-18 максимальний елемент
-              масиву ar18.
+              При натисканні b-18 виконуйте функцію fn18. Функція повинна в
+              out-18 вивести станції метро з обʼєкту obj18 тієї гілки, яку
+              користувач ввів в i-18. Виведення станцій — через пробіл. Якщо
+              гілка не знайдена, виводьте порожній рядок.
             </p>
-            <pre>ar18 = [15,24,13,78,21,4,45,67];</pre>
+            <div class="form-control">
+              Input i-18 <input type="text" class="i-18" />
+            </div>
             <button class="button-primary b-18">Task-18</button>
           </div>
           <div class="panel-footer">
@@ -446,7 +498,8 @@
           </div>
         </div>
       </section>
-      <!-- Task-19 -->
+
+      <!-- Task 19 -->
       <section>
         <div class="panel">
           <div class="panel-head">
@@ -454,10 +507,14 @@
           </div>
           <div class="panel-body">
             <p>
-              Виведіть в .out-19 <b>індекс</b> мінімального елемента в масиві
-              ar19
+              При натисканні b-19 виконуйте функцію fn19. Функція повинна в
+              out-19 вивести колір гілки станції, яку користувач ввів в i-19.
+              Користувач може вводити текст як з великої, так і з маленької
+              літери. Якщо гілка не знайдена — виводьте порожній рядок.
             </p>
-            <pre>ar19 = [15, 424, 313, 78, 241, 4, 45, 67]</pre>
+            <div class="form-control">
+              Input i-19 <input type="text" class="i-19" />
+            </div>
             <button class="button-primary b-19">Task-19</button>
           </div>
           <div class="panel-footer">
@@ -468,15 +525,19 @@
           </div>
         </div>
       </section>
-      <!-- Task-20 -->
+
+      <!-- Task 20 -->
       <section>
         <div class="panel">
           <div class="panel-head">
             <p class="panel-title">Task 20.</p>
           </div>
           <div class="panel-body">
-            <p>Виведіть в .out-20 суму елементів у масиві ar20.</p>
-            <pre> ar20 = [4, 5, 6, 7, 8, 9, 10];</pre>
+            <p>
+              При натисканні b-20 виконуйте функцію fn20. Функція повинна в
+              out-20 вивести назви станцій, які містять перехід на іншу гілку.
+              Такі станції маркуються 2. Виведення через пробіл.
+            </p>
             <button class="button-primary b-20">Task-20</button>
           </div>
           <div class="panel-footer">
@@ -488,6 +549,5 @@
         </div>
       </section>
     </main>
-    <script src="./script.js" type="module"></script>
   </body>
 </html>
