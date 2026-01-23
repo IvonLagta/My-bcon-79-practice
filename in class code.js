@@ -106,7 +106,6 @@ for (let i = 1; i < values.length; i++) {
 
 console.log(min);
 
-
 //
 
-createTransaction {}
+// createTransaction {}

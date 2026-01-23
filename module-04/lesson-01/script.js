@@ -139,6 +139,27 @@ const obj9 = {
   d: 54,
 };
 
+const input9 = document.querySelector(".i-9");
+const btn9 = document.querySelector(".b-9");
+const out9 = document.querySelector(".out-9");
+
+btn9.onclick = fn9;
+
+function fn9() {
+  const searchValue = Number(input9.value);
+  let result = "";
+  for (const key in obj9) {
+    obj9[key] === searchValue;
+    // console.log(obj9[key] === searchValue);
+    if (obj9[key] === searchValue) {
+      // console.log([key]);
+      result += `${key}`;
+    }
+  }
+  // console.log(result);
+  out9.innerHTML = result;
+}
+
 // Task 10
 const obj10 = {
   k: 22,
@@ -146,6 +167,25 @@ const obj10 = {
   m: 22,
 };
 
+const test10 = 22;
+const input10 = document.querySelector(".i-10");
+const btn10 = document.querySelector(".b-10");
+const out10 = document.querySelector(".out-10");
+
+btn10.onclick = fn10;
+
+function fn10() {
+  let res = "";
+  for (const key in obj10) {
+    if (test10 === obj10[key]) {
+      out10.innerHTML = true;
+      return;
+    }
+    {
+      out10.innerHTML = false;
+    }
+  }
+}
 // TODO: Значення для перевірки 22
 // TODO: Виклик fn10(a10, 22)
 
@@ -157,7 +197,19 @@ const obj11 = {
   k: 22,
   d: 54,
 };
+// delete obj11.b; //Убирает ключ из объекта
+// console.log("🚀 ~ obj11:", obj11);
 
+const input11 = document.querySelector(".i-11");
+const btn11 = document.querySelector(".b-11");
+const out11 = document.querySelector(".out-11");
+
+btn11.onclick = fn11;
+
+function fn11() {
+  delete obj11[input11.value];
+  fn5(obj11, out11);
+}
 // Task 12
 const obj12 = {
   b: 17,
@@ -167,13 +219,48 @@ const obj12 = {
   d: 17,
 };
 
+const input12 = document.querySelector(".i-12");
+const btn12 = document.querySelector(".b-12");
+const out12 = document.querySelector(".out-12");
+
+btn12.onclick = fn12;
+
+function fn12() {
+  const key = input12.value;
+  for (const key in obj12) {
+    if (value === obj12[key]) {
+      delete obj12[key];
+    }
+  }
+  fn5(obj12, out12);
+}
 // Task 13
 const obj13 = {
+  three: 5,
   prim: "hello",
   one: 4,
   testt: "vodolii",
   mango: "6",
+  two: 8,
+  a: NaN,
 };
+
+const btn13 = document.querySelector(".b-13");
+const out13 = document.querySelector(".out-13");
+
+btn13.onclick = fn13;
+
+function fn13() {
+  let total = 0;
+
+  for (const key in obj13) {
+    // console.log("🚀 ~ fn13 ~ obj13:", obj13[key]);
+    if (typeof obj13[key] === "number" && !Number.isNaN(+obj13[key])) {
+      total += obj13[key];
+    }
+  }
+  out13.innerHTML = total;
+}
 
 // Task 14
 const obj14 = {
