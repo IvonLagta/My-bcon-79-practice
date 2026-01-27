@@ -108,4 +108,92 @@ console.log(min);
 
 //
 
-// createTransaction {}
+const counter = {
+  value: 0,
+  increment(value) {
+    this.value += value;
+  },
+  decrement(value) {
+    this.value -= value;
+  },
+};
+
+const updatedCounter = function (value, operation) {
+  operation(value);
+};
+
+const increaseCounterValue = counter.increment;
+const decreaseCounterValue = counter.decrement;
+
+updatedCounter(13, counter.increment.bind(counter));
+updatedCounter(7, counter.decrement.bind(counter));
+console.log(counter);
+
+//
+
+const calc = (a, operation, b) => {
+  ({
+    "+": +a + +b,
+    "-": +a - +b,
+    "*": +a * +b,
+    "/": +a / +b,
+  })[operation];
+};
+
+console.log(calc(3, "*", 4)); // 12
+
+//
+
+const employee = {
+  baseSalary: 1000,
+  overtime: 10,
+  rate: 20,
+
+  getWage() {
+    return this.baseSalary + this.overtime * this.rate;
+  },
+};
+
+const employeeSalary = employee.getWage();
+console.log("🚀 ~ employeeSalary:", employeeSalary);
+
+//
+
+class CoffeeMachine {
+  maker;
+  model;
+  waterTank;
+  power;
+
+  constructor(maker, model, waterTank, power) {
+    this.maker = config.maker;
+    this.model = config.model;
+    this.waterTank = config.waterTank;
+    this.power = config.power;
+
+    const isPowered = this.checkPowerCap(config.power);
+    if (isPassed) {
+      return "All guchi";
+    }
+  }
+
+  checkPowerCap(powerValue) {
+    if (powerValue <= 0) {
+      console.warn("Мощьность не может быть меньше 0");
+      return false;
+    } else {
+      return true;
+    }
+  }
+}
+
+// const philipsConfig {
+//   maker: "Philips",
+//   model: "3321",
+//   waterTank; 1.4,
+//   power: 1480,
+// }
+
+const philips = new CoffeeMachine(philipsConfig);
+
+console.log("🚀 ~ philips:", philips);
