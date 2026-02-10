@@ -217,4 +217,3 @@ function init(cars = []) {
 }
 
 //
-}
